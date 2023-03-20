@@ -1,0 +1,31 @@
+.viewProfile.btn-light
+    color: var(--link-text-color)
+    display: none 
+
+.viewProfile.btn-primary 
+    display: none
+
+.resultContainer
+    height: 60vh
+    overflow-y: auto
+
+.searchCard
+    width: 50%
+    border-top: var(--border-top)
+    &:hover
+        box-shadow: 2px 2px #8888867c
+        background-color: var(--bs-light)
+        .viewProfile.btn-light
+            display: block
+        
+
+@media screen and (max-width: 480px)
+    .searchCard
+        width: 100%
+        .viewProfile.btn-light
+            display: none
+        .viewProfile.btn-primary
+            display: block
+        &:hover
+            .viewProfile.btn-light
+                display: none

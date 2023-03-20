@@ -1,0 +1,81 @@
+<div class="col-12">
+    <div class="bg-white m-3">
+        <app-screen-header [screenHeader]="'CREATE_CUSTOMERS.NEW_CUSTOMER' | translate">
+        </app-screen-header>
+        <form [formGroup]="createCustomerForm" class="w-100 p-3" (ngSubmit)="createCustomer()">
+            <div class="mb-3 form-item">
+                <label for="country" class="visually-hidden">{{'CREATE_CUSTOMERS.LABEL_COUNTRY' | translate}} </label>
+                <select class="form-select" id="country" formControlName="country">
+                    <option value="" disabled selected>{{'CREATE_CUSTOMERS.LABEL_COUNTRY' | translate}}</option>
+                    <option *ngFor="let country of countries">{{country}}</option>
+                </select>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="mb-3 form-item">
+                    <label for="first-name" class="visually-hidden">{{'CUSTOMER.LABEL_FIRST_NAME' | translate}} </label>
+                    <input id="first-name" class="form-control" type="text" formControlName="firstName"
+                        placeholder="{{'CUSTOMER.LABEL_FIRST_NAME' | translate}}">
+                    <div *ngIf="f.firstName.dirty && f.firstName.errors" class="invalid">
+                        <div *ngIf="f.firstName.errors.required">{{'CREATE_CUSTOMERS.REQUIRED_ERROR' | translate }}</div>
+                    </div>
+                </div>
+                <div class="mb-3 form-item">
+                    <label for="last-name" class="visually-hidden">{{'CUSTOMER.LABEL_LAST_NAME' | translate}} </label>
+                    <input id="last-name" class="form-control" type="text" formControlName="lastName"
+                        placeholder="{{'CUSTOMER.LABEL_LAST_NAME' | translate}}">
+                    <div *ngIf="f.lastName.dirty && f.lastName.errors" class="invalid">
+                        <div *ngIf="f.lastName.errors.required">{{'CREATE_CUSTOMERS.REQUIRED_ERROR' | translate }}</div>
+                    </div>
+                </div>
+                <div class="mb-3 form-item">
+                    <label for="email" class="visually-hidden"> {{'CUSTOMER.LABEL_EMAIL' | translate}} </label>
+                    <input id="email" class="form-control" type="text" formControlName="email"
+                        placeholder="{{'CUSTOMER.LABEL_EMAIL' | translate}}">
+                    <div *ngIf="f.email.dirty && f.email.errors" class="invalid">
+                        <div *ngIf="f.email.errors?.required">{{'CREATE_CUSTOMERS.REQUIRED_ERROR' | translate }}</div>
+                        <div *ngIf="f.email.errors?.email">{{'CREATE_CUSTOMERS.EMAIL_ERROR' | translate }}</div>
+                    </div>
+                </div>
+                <div class="mb-3 form-item">
+                    <label for="phoneNumber" class="visually-hidden"> {{'CUSTOMER.LABEL_PHONE_NUMBER' | translate}} </label>
+                    <input id="phoneNumber" class="form-control" type="tel" formControlName="phoneNumber"
+                        placeholder="{{'CUSTOMER.LABEL_PHONE_NUMBER' | translate}}">
+                    <div *ngIf="f.phoneNumber.dirty && f.phoneNumber.errors" class="invalid">
+                        <div *ngIf="f.phoneNumber.errors.required">{{'CREATE_CUSTOMERS.REQUIRED_ERROR' | translate }}</div>
+                        <div *ngIf="f.phoneNumber.errors.minlength || f.phoneNumber.errors.maxlength">{{'CREATE_CUSTOMERS.PHONE_NUMBER_LENGTH' | translate }}</div>
+                    </div>
+                </div>
+            </div>
+            <h6>{{'CREATE_CUSTOMERS.BILLING_ADDRESS' | translate}}</h6>
+            <div formGroupName="billingAddress" class="d-flex flex-wrap">
+                <div class="mb-3 form-item">
+                    <label for="address1" class="visually-hidden">{{'CREATE_CUSTOMERS.LABEL_ADDRESS_LINE' | translate}} </label>
+                    <input id="address1" class="form-control" type="text" formControlName="address1"
+                        placeholder="{{'CREATE_CUSTOMERS.LABEL_ADDRESS_LINE' | translate}}">
+                </div>
+                <div class="mb-3 form-item">
+                    <label for="state" class="visually-hidden">{{'CREATE_CUSTOMERS.LABEL_STATE' | translate}} </label>
+                    <select class="form-select" id="state" formControlName="state">
+                        <option value="" disabled selected>{{'CREATE_CUSTOMERS.LABEL_STATE' | translate}}</option>
+                        <option *ngFor="let state of states">{{state}}</option>
+                    </select>
+                </div>
+                <div class="mb-3 form-item">
+                    <label for="city" class="visually-hidden"> {{'CREATE_CUSTOMERS.LABEL_CITY' | translate}} </label>
+                    <input id="city" class="form-control" type="text" formControlName="city"
+                        placeholder="{{'CREATE_CUSTOMERS.LABEL_CITY' | translate}}">
+                </div>
+                <div class="mb-3 form-item">
+                    <label for="zipcode" class="visually-hidden"> {{'CREATE_CUSTOMERS.LABEL_ZIPCODE' | translate}} </label>
+                    <input id="zipcode" class="form-control" type="text" formControlName="zipcode"
+                        placeholder="{{'CREATE_CUSTOMERS.LABEL_ZIPCODE' | translate}}">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-start">
+                <button type="submit" class="btn btn-primary" [disabled]="!createCustomerForm.valid">{{'CUSTOMER.LABEL_SEARCH' | translate}}</button>
+            </div>
+            <ngb-alert *ngIf="showAlert" [type]="'success'" (closed)="showAlert=false">{{'CREATE_CUSTOMERS.SUCCESS_MESSAGE' | translate}}</ngb-alert>
+        </form>
+    </div>
+</div>

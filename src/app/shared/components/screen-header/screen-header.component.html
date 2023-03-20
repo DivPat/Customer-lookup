@@ -1,0 +1,12 @@
+<div class="header me-2 d-flex align-items-center">
+    <button class="btn btn-default link-text" (click)="onBack()">&lt;</button>
+    <div class="d-flex vertical-line flex-column flex-grow-1">
+     <span>{{screenHeader}}</span>
+     <span class="sub-header" *ngIf="screenSubheader">{{screenSubheader}}</span>
+    </div>
+    <button class="btn btn-default link-text" (click)="onClose()">
+        <span class="close-label">{{'CUSTOMER.LABEL_CLOSE' | translate}} </span>
+        <span class="close-symbol">&#x2715;</span>
+      </button>
+ </div>
+ <hr />

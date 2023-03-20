@@ -1,0 +1,38 @@
+{
+    "CUSTOMER": {
+        "TO_DO_QUESTION": "What do you want to do?",
+        "FORM_HEADER": "Look up Customer",
+        "CREATE_CUSTOMER": "Create Customer",
+        "LABEL_FIRST_NAME": "First Name",
+        "LABEL_LAST_NAME": "Last Name",
+        "LABEL_EMAIL":"Email",
+        "LABEL_PHONE_NUMBER": "Phone number",
+        "LABEL_RESET": "Reset",
+        "LABEL_SEARCH": "Search",
+        "LABEL_CLOSE": "Close",
+        "LABEL_BACK": "Back"
+    },
+    "CUSTOMER_DETAILS": {
+        "CUSTOMER_PROFILE": "Customer Profile",
+        "INTERESTED_PRODUCTS": "Interested Products",
+        "NO_PRODUCTS": "No products to show"
+    },
+    "CUSTOMER_RESULTS": {
+        "RESULTS": "Customer Search Results ({{noOfResults}})",
+        "LABEL_VIEW_PROFILE": "View Profile",
+        "NO_RESULTS": "No results found."
+    },
+    "CREATE_CUSTOMERS": {
+        "NEW_CUSTOMER": "New Customer",
+        "BILLING_ADDRESS": "Billing Address",
+        "LABEL_ADDRESS_LINE": "Address Line 1 (optional)",
+        "LABEL_COUNTRY": "Country / Region",
+        "LABEL_STATE": "State (optional)",
+        "LABEL_CITY": "City (optional)",
+        "LABEL_ZIPCODE": "Zipcode (optional)",
+        "REQUIRED_ERROR": "This field is required.",
+        "EMAIL_ERROR": "Email must be a valid email address.",
+        "SUCCESS_MESSAGE": "Successfully created a new customer.",
+        "PHONE_NUMBER_LENGTH": "Phonenumber must be of 10 digits"
+    }
+}

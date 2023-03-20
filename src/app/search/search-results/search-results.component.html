@@ -1,0 +1,41 @@
+<div class="col-12">
+    <div class="bg-white m-3">
+        <app-screen-header [screenHeader]="'CUSTOMER_RESULTS.RESULTS' | translate : {noOfResults: results.length }">
+        </app-screen-header>
+        <ng-container *ngIf="results.length > 0; else noResults">
+            <div appInfiniteScroll (scrolled)="onScroll()" class="d-flex resultContainer flex-wrap">
+                <ng-container *ngFor="let result of result$ | async">
+                    <div class="d-flex flex-row searchCard">
+                        <span class="m-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="32px" height="32px" viewBox="0 0 32 32" version="1.1">
+                                <g id="surface1">
+                                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                                        d="M 16 16 C 19.3125 16 22 13.3125 22 10 C 22 6.6875 19.3125 4 16 4 C 12.6875 4 10 6.6875 10 10 C 10 13.3125 12.6875 16 16 16 Z M 20 10 C 20 12.210938 18.210938 14 16 14 C 13.789062 14 12 12.210938 12 10 C 12 7.789062 13.789062 6 16 6 C 18.210938 6 20 7.789062 20 10 Z M 28 26 C 28 28 26 28 26 28 L 6 28 C 6 28 4 28 4 26 C 4 24 6 18 16 18 C 26 18 28 24 28 26 Z M 26 25.992188 C 25.996094 25.5 25.691406 24.019531 24.335938 22.664062 C 23.03125 21.359375 20.578125 20 16 20 C 11.421875 20 8.96875 21.359375 7.664062 22.664062 C 6.308594 24.019531 6.003906 25.5 6 25.992188 Z M 26 25.992188 " />
+                                </g>
+                            </svg>
+                        </span>
+                        <div class="d-flex flex-column m-2 flex-grow-1">
+                            <button class="btn btn-default p-0 link-text align-self-start"
+                                    (click)="viewProfile(result.CustomerID)">{{result.FullName}}</button>
+                            <button class="viewProfile btn btn-primary align-self-start" (click)="viewProfile(result.CustomerID)">
+                                {{'CUSTOMER_RESULTS.LABEL_VIEW_PROFILE' | translate}}</button>
+                            <span> {{result.CustomerAddressLine}} </span>
+                            <span> {{result.EmailID}}</span>
+                            <span> {{result.Phonenumber}} </span>
+                        </div>
+                        <button class="viewProfile btn btn-light" (click)="viewProfile(result.CustomerID)">
+                            {{'CUSTOMER_RESULTS.LABEL_VIEW_PROFILE' | translate}}</button>
+                    </div>
+                </ng-container>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
+<ng-template #noResults>
+    <div class="center m-3">
+        <span>{{'CUSTOMER_RESULTS.NO_RESULTS' | translate }}</span>
+        <button class="btn btn-default link-text" (click)="createCustomer()">{{'CUSTOMER.CREATE_CUSTOMER' | translate}}</button>
+    </div>
+</ng-template>

@@ -1,0 +1,10 @@
+<div class="d-flex">
+    <div class="flex-shrink-0">
+        <img [src]="product.PrimaryInformation.ImageURL" width=100 height=100 
+        alt="product.PrimaryInformation.DisplayDescription">
+    </div>
+    <div class="flex-grow-1 ms-3 d-flex flex-column">
+       <span> {{product.PrimaryInformation.DisplayDescription}} </span>
+       <span> {{product.ComputedPrice.UnitPrice | currency : product.ComputedPrice.Currency }}</span>
+    </div>
+</div>

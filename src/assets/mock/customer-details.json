@@ -1,0 +1,349 @@
+{
+    "CustomerList": {
+        "TotalNumberOfRecords": "2",
+        "Customer": [
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200001",
+                        "AddressLine1": "987, Broadview Avenue",
+                        "AddressLine2": "",
+                        "City": "Omaha",
+                        "Country": "US",
+                        "State": "NE",
+                        "ZipCode": "68101"
+                    }
+                },
+                "CustomerID": "100001",
+                "FirstName": "John",
+                "LastName": "Parks",
+                "EmailID": "john@example.com",
+                "Phonenumber": "1234567890"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200001",
+                        "AddressLine1": "123, Washington Avenue",
+                        "AddressLine2": "",
+                        "City": "Washington",
+                        "Country": "US",
+                        "State": "WA",
+                        "ZipCode": "68101"
+                    }
+                },
+                "CustomerID": "100002",
+                "FirstName": "Mary",
+                "LastName": "Parks",
+                "EmailID": "mary@example.com",
+                "Phonenumber": "4123567890"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100003",
+                "FirstName": "Abby",
+                "LastName": "Doyle",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100004",
+                "FirstName": "Abby1",
+                "LastName": "Doyle1",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100005",
+                "FirstName": "Abby2",
+                "LastName": "Doyle2",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100006",
+                "FirstName": "Abby3",
+                "LastName": "Doyle3",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100007",
+                "FirstName": "Abby4",
+                "LastName": "Doyle4",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100008",
+                "FirstName": "Abby5",
+                "LastName": "Doyle5",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100009",
+                "FirstName": "Abby6",
+                "LastName": "Doyle6",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100010",
+                "FirstName": "Abby7",
+                "LastName": "Doyle7",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100011",
+                "FirstName": "Abby8",
+                "LastName": "Doyle8",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100012",
+                "FirstName": "Abby9",
+                "LastName": "Doyle9",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100013",
+                "FirstName": "Abby10",
+                "LastName": "Doyle10",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100014",
+                "FirstName": "Abby11",
+                "LastName": "Doyle11",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100015",
+                "FirstName": "Abby12",
+                "LastName": "Doyle12",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100016",
+                "FirstName": "Abby13",
+                "LastName": "Doyle13",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100017",
+                "FirstName": "Abby14",
+                "LastName": "Doyle14",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100018",
+                "FirstName": "Abby15",
+                "LastName": "Doyle15",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            },
+            {
+                "CustomerAddressList": {
+                    "CustomerAddress": {
+                        "AddressID": "200002",
+                        "AddressLine1": "6849, Wolfe Road",
+                        "AddressLine2": "123",
+                        "City": "Sunnydale",
+                        "Country": "US",
+                        "State": "CA",
+                        "ZipCode": "94049"
+                    }
+                },
+                "CustomerID": "100019",
+                "FirstName": "Abby16",
+                "LastName": "Doyle16",
+                "EmailID": "adoyle@example.com",
+                "Phonenumber": "6478390821"
+            }
+        ]
+    }
+}

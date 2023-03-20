@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap'
+
+:root 
+  --border-top: 1px solid rgba(33, 37, 41, 0.25)
+  --link-text-color: #1d84a9
+
+
+
+body 
+  font: 1rem/1.5 var(--bs-font-sans-serif)
+  background-color: var(--bs-light)
+
+a 
+  color: var(--bs-blue)
+
+button, input, select
+  border-radius: 0!important
+
+.center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center 
+
+@media screen and ( max-width: 480px )
+    .center
+        display: block
+
+.link-text
+  color: var(--link-text-color)
+
+hr
+  margin: 0
+  border-top: var(--border-top)
+
+
+$btnPrimarycolor: #1d84a9
+$white: #ffffff
+
+.btn-primary 
+    @include button-variant($btnPrimarycolor, darken($btnPrimarycolor, 7.5%), $white , lighten($btnPrimarycolor,5%), lighten($btnPrimarycolor, 10%), darken($btnPrimarycolor,30%))
+
+
+.btn-outline-primary 
+    @include button-outline-variant($btnPrimarycolor, #222222, lighten($btnPrimarycolor,5%), $btnPrimarycolor)

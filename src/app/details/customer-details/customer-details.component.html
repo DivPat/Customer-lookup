@@ -1,0 +1,49 @@
+<div class="col-12">
+  <div class="bg-white m-3">
+    <!-- <div class="header me-2 d-flex align-items-center">
+       <button class="btn btn-default" (click)="onBack()">&lt;</button>
+       <div class="d-flex vertical-line flex-column flex-grow-1">
+        <span>{{'CUSTOMER_DETAILS.CUSTOMER_PROFILE' | translate}} </span>
+        <span>{{customerDetails.FullName}}</span>
+       </div>
+       <button class="btn btn-outline-primary" (click)="onClose()">{{'CUSTOMER.LABEL_CLOSE' | translate}}</button>
+    </div> -->
+    <app-screen-header [screenHeader]="'CUSTOMER_DETAILS.CUSTOMER_PROFILE' | translate"
+      [screenSubheader]="customerDetails.FullName || ''"></app-screen-header>
+    <div class="bg-light m-2 p-2 d-flex flex-column align-self-stretch">
+      <div class="d-flex flex-wrap justify-content-between">
+        <span class="me-3">{{customerDetails.Phonenumber}}</span>
+        <span>{{customerDetails.CustomerAddressLine}}</span>
+      </div>
+      <div>
+        <span>{{customerDetails.EmailID}}</span>
+      </div>
+    </div>
+    <div class="products m-2">
+      <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="constants.interestedProductsTab">
+          <a ngbNavLink>{{'CUSTOMER_DETAILS.INTERESTED_PRODUCTS' | translate}}</a>
+          <ng-template ngbNavContent>
+
+            <ng-container *ngIf="products$ | async as productList">
+              <ng-container *ngIf="productList && productList.length > 0; else showNoProducts">
+                <div class="d-flex justify-content-between flex-wrap">
+                  <ng-container *ngFor="let product of productList">
+                    <app-interested-products [product]="product" class="col-md-6"></app-interested-products>
+                  </ng-container>
+                </div>
+              </ng-container>
+
+              <ng-template #showNoProducts>
+                <div class="center p-2">{{'CUSTOMER_DETAILS.NO_PRODUCTS' | translate}}</div>
+              </ng-template>
+            </ng-container>
+
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </div>
+
+  </div>
+</div>

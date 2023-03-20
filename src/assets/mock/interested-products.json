@@ -1,0 +1,54 @@
+{
+    "CustomerInterestedItemsList": {
+        "Item": [
+            {
+                "PrimaryInformation": {
+                    "DisplayDescription": "Frigidaire Window Air Conditioner 1200-BTU",
+                    "ImageURL": "/assets/images/ac.jpg/"
+                },
+                "ComputedPrice": {
+                    "UnitPrice": "250",
+                    "Currency": "USD"
+                },
+                "ItemID": "1010001",
+                "CustomerID": "100001"
+            },
+            {
+                "PrimaryInformation": {
+                    "DisplayDescription": "Hunter Regalia 60-in New Bronze Ceiling Fan",
+                    "ImageURL": "/assets/images/ceilingFan.jpg/"
+                },
+                "ComputedPrice": {
+                    "UnitPrice": "200",
+                    "Currency": "USD"
+                },
+                "ItemID": "1010002",
+                "CustomerID": "100001"
+            },
+            {
+                "PrimaryInformation": {
+                    "DisplayDescription": "L65P2MUS Android M 4K UHD LED Smart TV",
+                    "ImageURL": "/assets/images/tv.jpg/"
+                },
+                "ComputedPrice": {
+                    "UnitPrice": "300",
+                    "Currency": "USD"
+                },
+                "ItemID": "1010003",
+                "CustomerID": "100001"
+            },
+            {
+                "PrimaryInformation": {
+                    "DisplayDescription": "Samsung 212L 3 Star Direct Cool Single Door Refrigerator",
+                    "ImageURL": "/assets/images/refrigerator.jpg/"
+                },
+                "ComputedPrice": {
+                    "UnitPrice": "500",
+                    "Currency": "USD"
+                },
+                "ItemID": "1010004",
+                "CustomerID": "100002"
+            }
+        ]
+    }
+}
