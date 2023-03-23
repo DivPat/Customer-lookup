@@ -2,10 +2,10 @@
     <div class="bg-white m-3">
         <app-screen-header [screenHeader]="'CUSTOMER_RESULTS.RESULTS' | translate : {noOfResults: results.length }">
         </app-screen-header>
-        <ng-container *ngIf="results.length > 0; else noResults">
+        <ng-container *ngIf="results.length > 0; else noResults" role="main">
             <div appInfiniteScroll (scrolled)="onScroll()" class="d-flex resultContainer flex-wrap">
                 <ng-container *ngFor="let result of result$ | async">
-                    <div class="d-flex flex-row searchCard">
+                    <div class="d-flex flex-row searchCard" [attr.aria-label]="result.FullName">
                         <span class="m-2">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="32px" height="32px" viewBox="0 0 32 32" version="1.1">
@@ -16,15 +16,15 @@
                             </svg>
                         </span>
                         <div class="d-flex flex-column m-2 flex-grow-1">
-                            <button class="btn btn-default p-0 link-text align-self-start"
+                            <button class="btn btn-default p-0 link-text align-self-start" role="button"
                                     (click)="viewProfile(result.CustomerID)">{{result.FullName}}</button>
-                            <button class="viewProfile btn btn-primary align-self-start" (click)="viewProfile(result.CustomerID)">
+                            <button class="viewProfile btn btn-primary align-self-start" role="button" (click)="viewProfile(result.CustomerID)">
                                 {{'CUSTOMER_RESULTS.LABEL_VIEW_PROFILE' | translate}}</button>
                             <span> {{result.CustomerAddressLine}} </span>
                             <span> {{result.EmailID}}</span>
                             <span> {{result.Phonenumber}} </span>
                         </div>
-                        <button class="viewProfile btn btn-light" (click)="viewProfile(result.CustomerID)">
+                        <button class="viewProfile btn btn-light" (click)="viewProfile(result.CustomerID)" role="button">
                             {{'CUSTOMER_RESULTS.LABEL_VIEW_PROFILE' | translate}}</button>
                     </div>
                 </ng-container>

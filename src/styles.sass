@@ -4,8 +4,8 @@
 @import 'bootstrap/scss/bootstrap'
 
 :root 
-  --border-top: 1px solid rgba(33, 37, 41, 0.25)
-  --link-text-color: #1d84a9
+  --border-color: 1px solid rgba(33, 37, 41, 0.25)
+  --link-text-color: #106786
 
 
 
@@ -34,10 +34,11 @@ button, input, select
 
 hr
   margin: 0
-  border-top: var(--border-top)
+  border-top: var(--border-color)
+  opacity: 0.75
 
 
-$btnPrimarycolor: #1d84a9
+$btnPrimarycolor: #106786
 $white: #ffffff
 
 .btn-primary 
@@ -46,3 +47,6 @@ $white: #ffffff
 
 .btn-outline-primary 
     @include button-outline-variant($btnPrimarycolor, #222222, lighten($btnPrimarycolor,5%), $btnPrimarycolor)
+
+.bg-white
+    height:75vh

@@ -1,9 +1,9 @@
 <div class="d-flex justify-content-center m-3">{{'CUSTOMER.TO_DO_QUESTION' | translate }}</div>
-<div class="center">
-    <div class="bg-white center col-md-4">
-        <div class="m-3">{{'CUSTOMER.FORM_HEADER' | translate}}</div>
-        <button class="btn btn-default link-text align-self-end" (click)="createCustomer()">{{'CUSTOMER.CREATE_CUSTOMER' | translate}}</button>
-        <form [formGroup]="customerSearchForm" class="w-100 p-3" (ngSubmit)="onCustomerSearch()">
+<div class="d-flex justify-content-center">
+    <div class="bg-white m-3 container-width d-flex flex-column" role="main">
+        <div class="m-3 center d-flex header">{{'CUSTOMER.FORM_HEADER' | translate}}</div>
+        <button class="btn btn-default link-text align-self-end" role="button" (click)="createCustomer()">{{'CUSTOMER.CREATE_CUSTOMER' | translate}}</button>
+        <form [formGroup]="customerSearchForm" class="w-100 p-3" role="search" (ngSubmit)="onCustomerSearch()">
             <div class="mb-3">
                 <label for="first-name" class="visually-hidden"> {{'CUSTOMER.LABEL_FIRST_NAME' | translate}} </label>
                 <input id="first-name" class="form-control" type="text" formControlName="firstName"
@@ -23,8 +23,8 @@
                 <input id="phoneNumber" class="form-control" type="tel" formControlName="phoneNumber" placeholder="{{'CUSTOMER.LABEL_PHONE_NUMBER' | translate}}">
             </div>
             <div class="d-flex justify-content-end">
-                <button type="reset" class="me-2 btn btn-outline-primary">{{'CUSTOMER.LABEL_RESET' | translate}}</button>
-                <button type="submit" class="btn btn-primary">{{'CUSTOMER.LABEL_SEARCH' | translate}}</button>
+                <button type="reset" role="button" class="me-2 btn btn-outline-primary">{{'CUSTOMER.LABEL_RESET' | translate}}</button>
+                <button type="submit" role="button" class="btn btn-primary">{{'CUSTOMER.LABEL_SEARCH' | translate}}</button>
             </div>
         </form>
     </div>

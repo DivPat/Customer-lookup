@@ -10,18 +10,24 @@
     overflow-y: auto
 
 .searchCard
-    width: 50%
-    border-top: var(--border-top)
+    width: 45%
+    height: 30%
+    border-bottom: var(--border-color)
+    margin: 1rem
     &:hover
         box-shadow: 2px 2px #8888867c
         background-color: var(--bs-light)
         .viewProfile.btn-light
             display: block
+    &:nth-last-child(-n + 2)
+        border-bottom: none
         
 
 @media screen and (max-width: 480px)
     .searchCard
         width: 100%
+        &:last-child
+            border-bottom: none
         .viewProfile.btn-light
             display: none
         .viewProfile.btn-primary

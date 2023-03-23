@@ -6,7 +6,7 @@ import { ScreenHeaderComponent } from './components/screen-header/screen-header.
 import { InfiniteScrollDirective } from './directives/infinite-scroll.directive';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-const components  = [HeaderComponent, ScreenHeaderComponent, InfiniteScrollDirective, PageNotFoundComponent]
+const components  = [HeaderComponent, ScreenHeaderComponent, PageNotFoundComponent, InfiniteScrollDirective]
 const imports = [CommonModule, TranslateModule]
 @NgModule({
   declarations: [...components],

@@ -1,5 +1,5 @@
 <div class="col-12">
-    <div class="bg-white m-3">
+    <div class="bg-white m-3" role="main">
         <app-screen-header [screenHeader]="'CREATE_CUSTOMERS.NEW_CUSTOMER' | translate">
         </app-screen-header>
         <form [formGroup]="createCustomerForm" class="w-100 p-3" (ngSubmit)="createCustomer()">
@@ -73,7 +73,7 @@
             </div>
 
             <div class="d-flex justify-content-start">
-                <button type="submit" class="btn btn-primary" [disabled]="!createCustomerForm.valid">{{'CUSTOMER.LABEL_SEARCH' | translate}}</button>
+                <button type="submit" class="btn btn-primary" role="button" [disabled]="!createCustomerForm.valid">{{'CUSTOMER.LABEL_SEARCH' | translate}}</button>
             </div>
             <ngb-alert *ngIf="showAlert" [type]="'success'" (closed)="showAlert=false">{{'CREATE_CUSTOMERS.SUCCESS_MESSAGE' | translate}}</ngb-alert>
         </form>

@@ -14,7 +14,6 @@ export class CustomerSearchComponent implements OnInit {
   customerSearchForm: FormGroup;
 
   constructor(public fb: FormBuilder,
-    private customerDetailsService: CustomerDetailsService,
     private router: Router) { }
 
   ngOnInit(): void {
@@ -27,29 +26,7 @@ export class CustomerSearchComponent implements OnInit {
   }
 
   onCustomerSearch() {
-
     this.router.navigate([Constants.resultRoute ], {state: { searchForm: this.customerSearchForm.value }});
-    // let values = Object.values(this.customerSearchForm.value);
-    // const formValue = values.reduce((acc: string, val) => acc + val, '')
-    // if (formValue) {
-    //   this.customerDetailsService.searchCustomer(this.customerSearchForm.value).subscribe({
-    //     next: (response: string[]) => {
-    //       if (response && response.length === 1) {
-    //         this.router.navigate([Constants.detailsRoute, response[0]])
-    //       } else if (response && response.length > 0) {
-    //         this.router.navigate([Constants.resultRoute], { queryParams: { customerIdList: response, showAll: false } });
-    //       } else {
-    //         this.router.navigate([Constants.resultRoute], { queryParams: { customerIdList: [], showAll: false } });
-    //       }
-    //     },
-    //     error: (error) => {
-    //       console.error(error);
-    //     }
-    //   })
-    // } else {
-    //   this.router.navigate([Constants.resultRoute], { queryParams: { customerIdList: [], showAll: true } });
-    // }
-
   }
 
   createCustomer() {

@@ -1,16 +1,8 @@
 <div class="col-12">
   <div class="bg-white m-3">
-    <!-- <div class="header me-2 d-flex align-items-center">
-       <button class="btn btn-default" (click)="onBack()">&lt;</button>
-       <div class="d-flex vertical-line flex-column flex-grow-1">
-        <span>{{'CUSTOMER_DETAILS.CUSTOMER_PROFILE' | translate}} </span>
-        <span>{{customerDetails.FullName}}</span>
-       </div>
-       <button class="btn btn-outline-primary" (click)="onClose()">{{'CUSTOMER.LABEL_CLOSE' | translate}}</button>
-    </div> -->
     <app-screen-header [screenHeader]="'CUSTOMER_DETAILS.CUSTOMER_PROFILE' | translate"
       [screenSubheader]="customerDetails.FullName || ''"></app-screen-header>
-    <div class="bg-light m-2 p-2 d-flex flex-column align-self-stretch">
+    <div class="bg-light m-2 p-2 d-flex flex-column align-self-stretch" aria-label="customer details">
       <div class="d-flex flex-wrap justify-content-between">
         <span class="me-3">{{customerDetails.Phonenumber}}</span>
         <span>{{customerDetails.CustomerAddressLine}}</span>
@@ -19,10 +11,10 @@
         <span>{{customerDetails.EmailID}}</span>
       </div>
     </div>
-    <div class="products m-2">
-      <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-        <li [ngbNavItem]="constants.interestedProductsTab">
-          <a ngbNavLink>{{'CUSTOMER_DETAILS.INTERESTED_PRODUCTS' | translate}}</a>
+    <div class="products m-2"  aria-label="product details" role="main">
+      <ul ngbNav #nav="ngbNav" role="tabpanel" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="constants.interestedProductsTab" role="tablist">
+          <a ngbNavLink role="tab">{{'CUSTOMER_DETAILS.INTERESTED_PRODUCTS' | translate}}</a>
           <ng-template ngbNavContent>
 
             <ng-container *ngIf="products$ | async as productList">
